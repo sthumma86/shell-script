@@ -3,9 +3,9 @@
 VALIDATE ()
     {
         if [ $? ne 0 ] then
-        echo "Error: Installation is not succesful"
+            echo "Error: Installation is not succesful"
         else
-        echo "Installation is success"
+            echo "Installation is success"
     }
 
 if [ id ne 0] then
