@@ -7,14 +7,14 @@ then
     echo "Error: please execute with root user"
     exit 1
 else
-    echo "proceeding with installation"
+    echo "You are root user, proceeding with installation"
 fi
 
-VALIDATE ()
-    {
+VALIDATE(){
         if [ $? ne 0 ] 
         then
-            echo "Error: Installation is not successful"
+            echo "Error: Installation of MYSQL is not successful"
+            exit 1
         else
             echo "Installation is success"
         fi
@@ -22,4 +22,4 @@ VALIDATE ()
 
 yum install mysql -y
 
-VALIDATE()
+VALIDATE
