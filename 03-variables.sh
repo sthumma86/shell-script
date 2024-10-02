@@ -2,5 +2,5 @@
 
 DATE=$(date)
 
-echo "script started execute at: ${DATE}
+echo "script started execute at: $DATE
 
